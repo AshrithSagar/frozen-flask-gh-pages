@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 
+{% block head %}
+{{ super() }}
+<link rel="stylesheet" href="{{ url_for('static', filename='lib/page_2.css') }}">
+{% endblock %}
+
 {% block title %}frozen-flask-gh-pages{% endblock %}
 
 {% block content %}
