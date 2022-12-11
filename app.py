@@ -23,6 +23,11 @@ def index():
     return render_template("index.html")
 
 
+@app.route("/<path:page>")
+def pages(page):
+    return render_template(page)
+
+
 if __name__ == '__main__':
     freezer.freeze()  # Freeze the app into FREEZER_DESTINATION
     freezer.serve()  # Serve the app locally from FREEZER_DESTINATION

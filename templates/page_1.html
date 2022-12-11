@@ -5,12 +5,12 @@
 {% block content %}
 
 <h1>frozen-flask-gh-pages</h1>
-<h2>index</h2>
-<p>Currently at: <a href="{{ url_for('index') }}">index.html</a></p>
+<h2>page_1</h2>
+<p>Currently at: <a href="{{ url_for('pages', page='page_1.html') }}">page_1.html</a></p>
 
 <p>Go to:</p>
 <ul>
-    <li><a href="{{ url_for('pages', page='page_1.html') }}">page_1.html</a></li>
+    <li><a href="{{ url_for('index') }}">index.html</a></li>
 </ul>
 
 {% endblock %}
