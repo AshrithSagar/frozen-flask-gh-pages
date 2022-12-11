@@ -38,7 +38,7 @@ https://pages.github.com/
 5. Run the server
 
    ```shell
-   python3 app.y
+   python3 app.py
    ```
 
 6. The static website files are stored in `docs/` directory on `gh-pages` branch, which will be hosted on GitHub Pages.
